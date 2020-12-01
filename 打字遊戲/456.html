@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="../js/jquery-3.4.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        #bkw {
+            padding-left: 30VW;
+            padding-top: 10vh;
+            background: rgba(255, 255, 255, 0.7);
+            height: 70vh;
+        }
+
+        .kw {
+            width: 40px;
+            height: 40px;
+            float: left;
+            border: 1px solid black;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+
+        .kwp {
+            width: 20px;
+            height: 40px;
+            float: left;
+        }
+
+        #a123 {
+            background-image: url(img/_VpvxehRxwxKljtJOMP1SZWbmwofD3UssbRYM87xQWk.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .carousel-inner>.carousel-item>img {
+            width: 40vw;
+            height: 30vh;
+        }
+
+        .moImg {
+            width: 100%;
+        }
+
+        #count {
+            margin-left: 5vw;
+            display: inline;
+        }
+
+        #time {
+            margin-left: 5vw;
+            display: inline;
+        }
+
+        #moTxt {
+            position: relative;
+            float: left;
+            left: -55%;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .modal-footer {
+            padding-top: 0;
+        }
+
+        #pre {
+            max-width: 37%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="a123">
+        <div id="carCat">
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/AP110606029137-jpg_213656.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/BBC_0.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/06CLI-LIGHTNING-superJumbo.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bkw">
+            <div>
+                <button onclick="star()" id="btstart" class="btn btn-primary">開始</button>
+                <select class="btn btn-outline-primary">
+                    <option value="20">簡單</option>
+                    <option value="10">普通</option>
+                    <option value="5">困難</option>
+                    <option value="1">地獄</option>
+                </select>
+                <div id="count">0</div>
+                <div style="display: inline;"> 分</div>
+                <div id="time">0</div>
+                <div style="display: inline;"> 秒</div>
+            </div>
+            <br>
+
+            <div class="kw" id="81">Q</div>
+            <div class="kw" id="87">W</div>
+            <div class="kw" id="69">E</div>
+            <div class="kw" id="82">R</div>
+            <div class="kw" id="84">T</div>
+            <div class="kw" id="89">Y</div>
+            <div class="kw" id="85">U</div>
+            <div class="kw" id="73">I</div>
+            <div class="kw" id="79">O</div>
+            <div class="kw" id="80">P</div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="kwp"></div>
+            <div class="kw" id="65">A</div>
+            <div class="kw" id="83">S</div>
+            <div class="kw" id="68">D</div>
+            <div class="kw" id="70">F</div>
+            <div class="kw" id="71">G</div>
+            <div class="kw" id="72">H</div>
+            <div class="kw" id="74">J</div>
+            <div class="kw" id="75">K</div>
+            <div class="kw" id="76">L</div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="kwp"></div>
+            <div class="kwp"></div>
+            <div class="kw" id="90">Z</div>
+            <div class="kw" id="88">X</div>
+            <div class="kw" id="67">C</div>
+            <div class="kw" id="86">M</div>
+            <div class="kw" id="66">B</div>
+            <div class="kw" id="78">N</div>
+            <div class="kw" id="77">M</div>
+
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="point">
+
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <div id="moTxt">
+
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        function star(e) {
+            $('#count').text(0);
+            $('#btstart').attr("disabled", 'disabled');
+            $('select').attr("disabled", 'disabled');
+            $('#time').text(60);
+            keyRandom();
+            // console.log($('select').val());
+            let opt = $('select').val(); //用option選難度
+            var setO = setInterval(function () { keyRandom() }, opt * 100);
+            var setT = setInterval(function () { $('#time').text(parseInt($('#time').text()) - 1); timeColor() }, 1000);
+            setTimeout(function () {
+                clearTimeout(setO);
+                clearTimeout(setT);
+                $('#btstart').removeAttr("disabled");
+                $('select').removeAttr("disabled");
+                $('#myModal').modal('show');
+            }, 60000); //1分鐘後停止
+
+
+        };
+        function timeColor() { //當剩餘秒數小於等於10時,秒數的顏色變成紅色
+            if (parseInt($('#time').text()) > 0 && parseInt($('#time').text()) < 11) {
+                $('#time').css('color', 'red');
+            } else {
+                $('#time').css('color', 'black');
+            };
+        };
+        var list = {
+            65: false,
+            66: false,
+            67: false,
+            68: false,
+            69: false,
+            70: false,
+            71: false,
+            72: false,
+            73: false,
+            74: false,
+            75: false,
+            76: false,
+            77: false,
+            78: false,
+            79: false,
+            80: false,
+            81: false,
+            82: false,
+            83: false,
+            84: false,
+            85: false,
+            86: false,
+            87: false,
+            88: false,
+            89: false,
+            90: false,
+        };
+        var a;
+        function keyRandom() {  //隨機產生亂數鍵值
+            a = Math.floor(Math.random() * 26) + 65;
+            var b;
+            b = a;
+            //為true時,才可以得分
+            // console.log(list);
+            if (!list[b]) { //為false才可以顯示,避免重複
+                list[b] = true;
+                if (b in {
+                    81: '', 87: '', 69: '', 82: '', 84: '', 65: '', 83: '', 68: '', 70: '', 71: '',
+                    90: '', 88: '', 67: '', 86: '', 66: ''
+                }) { //IN要用對象,以此來分辨鍵盤的顯示的顏色
+                    $("#" + b + "").css("background-color", "yellow");
+                } else {
+                    $("#" + b + "").css("background-color", "blue");
+                };
+                setTimeout(function () {
+                    if (list[b]) { //如果還沒被按下才會被消除
+                        $("#" + b + "").css("background-color", "");
+                        list[b] = false;
+                    };
+                }, 1000);
+            } else {
+                keyRandom();
+            }
+        };
+        function keyGround(e) {  // 按鍵盤會改變該鍵盤的背景色
+            // console.log(event.which);
+            var c;
+            c = event.which;
+
+            // // $(".kw").keydown(function () {
+            if (list[c]) {  //當對象為true時
+                $("#" + event.which + "").css("background-color", "green");
+                // console.log("a:" + a);
+                // console.log("a:" + event.which);
+                count();
+                list[c] = false; //成功後轉為false,避免重複得分
+            } else {
+                $("#" + event.which + "").css("background-color", "red");
+                // console.log("b:" + a);
+                // console.log("b:" + event.which);
+            }
+            // });
+            // setTimeout(function () {
+            //     $("#" + c + "").css("background-color", "");
+            // }, 100);
+
+            $('body').keyup(function () {
+                $("#" + event.which + "").css("background-color", "");
+            });
+            // $("#" + a +"").css("background-color", "yellow");
+        };
+        var d = $(document);  //按一次鍵盤只會反應一次
+        d.one('keydown', keyGround)
+
+            .on("keyup", function () {
+
+                d.one("keydown", keyGround)
+
+            });
+
+        // function keyRandom () { 
+        //     return Math.floor(Math.random()*26)+65 ;
+        // };
+        $('#myModal').on('show.bs.modal', function (e) {
+            var countext = parseInt($('#count').text());
+            $('#point').html(`你總共得到${countext}分`); //彈出得分視窗
+            if (countext < 200) { //依得分換圖片和文字
+                $('.modal-body').html(`<img class="moImg" src="./img/cats.jpg">`);
+                $('#moTxt').html(`請多多練習`);
+            } else if (countext < 450) {
+                $('.modal-body').html(`<img class="moImg" src="./img/sv3babes.jpg">`);
+                $('#moTxt').html(`你好厲害`);
+            } else if (countext < 1000) {
+                $('.modal-body').html(`<img class="moImg" src="./img/kitten-facts-AP-long.jpg">`);
+                $('#moTxt').html(`非常棒`);
+            } else {
+                $('.modal-body').html(`<img class="moImg" src="./img/EJ9yqYKWoAAU9Vb.jpg">`);
+                $('#moTxt').html(`你是機器嗎`);
+            }
+        })
+
+
+        function count() { //增加分數
+            $('#count').text(parseInt($('#count').text()) + 10);
+        };
+        // $('#myModal').modal('show');
+
+    </script>
+</body>
+
+</html>
