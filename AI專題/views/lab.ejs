@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="./webcam.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <form class="form-horizontal">
+          <fieldset>
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="control-label" for="locationTextBox">Location:</label>
+              <div>
+                <input id="locationTextBox" value="southeastasia" name="locationTextBox" type="text" placeholder=""
+                  class="form-control input-md">
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="control-label" for="keyTextBox">Key:</label>
+              <div>
+                <input id="keyTextBox" name="keyTextBox" value="083c9fb678d14c18be46007a7df17a4d" type="text"
+                  placeholder="" class="form-control input-md">
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+
+      </div>
+      <div class="col-sm-4">
+        <div id="cameraDiv"></div>
+        <!-- Button -->
+        <div class="form-group">
+          <label class="control-label" for="okButton"></label>
+          <div>
+            <button type="button" id="okButton" name="okButton" class="btn btn-primary">OK</button>
+            <button type="button" id="selectButton" name="selectButton" class="btn btn-primary">Select</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <canvas id="viewPort" width="320" height="240"></canvas>
+        <div class="form-group">
+          <label class="control-label" for="checkButton"></label>
+          <div>
+            <button type="button" id="checkButton" name="checkButton" class="btn btn-primary" disabled
+              >OK</button>
+            <button type="button" id="romveButton" name="checkButton" class="btn btn-primary"
+              >Romve</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <pre id="reportHere"></pre>
+
+  </div>
+
+  <script src="./main.js">
+
+    
+
+  </script>
+
+</body>
+
+</html>
