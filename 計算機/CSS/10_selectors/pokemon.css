@@ -1,0 +1,71 @@
+        /* 挑選 img 標籤，將寬度 width 設定為 150px */
+        img {
+            width: 150px;
+        }
+
+        /* 挑選 div 標籤，將 display 設定為 inline-block */
+        div {
+            display: inline-block;
+        }
+
+        /* 用   #id  挑選，幫這 5個 div 各自設定顏色 color */
+        #Bulbasaur {
+            color: green;
+        }
+
+        #Charmander {
+            color: red;
+        }
+
+        #Squirtle {
+            color: blue;
+        }
+
+        #Pikachu {
+            color: yellow;
+        }
+
+        #cat {
+            color: orange;
+        }
+
+        /* 用 .class 挑選，將 pokemon 類型的背景進行相關設定 background-* (答案在防雷頁底下) */
+        /* .pokemon {
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("image/Pokemon/pokeball.png");
+
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+        } */
+
+
+
+
+        /* ==防雷頁== */
+        /* linear-gradient：顏色漸層設定 */
+        /* :::before      ：虛擬元素設定 */
+
+        /* 設定透明度方法A：background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("image/Pokemon/pokeball.png");*/
+
+        /* 設定透明度方法B */
+        .pokemon {
+            position: relative;
+        }
+
+        .pokemon::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url("image/Pokemon/pokeball.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+            
+        }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        /* 10. 加入 .group1 的背景底色，觀察畫面 */
+        .group1 {
+            background-color: lightcoral;
+        }
+
+        /* 20. 選擇 group1 底下的 div，設定 float 屬性，並觀察畫面 */
+        .group1>div {
+            float: right;
+        }
+
+        /* 30. 測試三種可以取消 float 的方法  */
+        /*     a. 在第二個 hr 設置 clear: both;  */
+        hr:nth-of-type(2) {
+            /* clear: both; */
+        }
+
+        /*     b. 在 .group1 加入 overflow: hidden; */
+        .group1{
+            /* overflow: hidden; */
+        }
+
+        /*     c. 透過虛擬元素 */
+        .group1::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h3>定義元素的浮動方式 以及 清除浮動影響</h3>
+    <h3><a href="https://www.w3schools.com/css/css_float.asp">CSS Layout - float and clear</a></h3>
+
+    <hr>
+
+    <div class="group1">
+        <div>
+            <p>1</p>
+            <img src="img/like.png" alt="">
+        </div>
+        <div>
+            <p>2</p>
+            <img src="img/like.png" alt="">
+        </div>
+        <div>
+            <p>3</p>
+            <img src="img/like.png" alt="">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="group1">
+        <div>
+            <p>1</p>
+            <img src="img/like.png" alt="">
+        </div>
+        <div>
+            <p>2</p>
+            <img src="img/like.png" alt="">
+        </div>
+        <div>
+            <p>3</p>
+            <img src="img/like.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

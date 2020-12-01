@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <p>
+        em不是專有名詞的縮寫，單純指一個大寫字母「M」所佔有的寬度。
+        <br> 在字母裡面，M是最接近滿格的一個。
+        <br> <b>相對於父元素font-size(如body沒有設置，則採用瀏覽器的預設值(16px))的比例。</b>
+        <br> <b>em會巢狀層級而疊加</b>
+    </p>
+
+    <div>
+        <div style="font-size: 1em; background-color:lightsalmon">測試 em - 1</div>
+    </div>
+
+    <hr>
+
+    <!-- 10. 觀察這個元素和上一個元素呈現的不同 -->
+    <div style="font-size:3em">
+        <div style="font-size: 1em; background-color:lightskyblue">測試 em - 2</div>
+    </div>
+
+    <hr>
+
+    <p>
+        rem：root em，不會隨巢狀層級疊加
+        <br> 以 html 設定的 font-size 為基準計算
+    </p>
+
+    <!-- 20. 觀察改用 rem 單位設定和上一個設定有什麼不同 -->
+    <div style="font-size:3rem">
+        <div style="font-size: 1rem; background-color: lightgreen;" >測試 rem - 3</div>
+    </div>
+
+    <hr>
+</body>
+
+</html>

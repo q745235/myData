@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple selectors</title>
+
+
+
+    <!-- 將CSS部分獨立撰寫 -->
+    <!--   a. CSS會區分文字大小寫 -->
+    <!--   b. CSS註解方式為 /* */ -->
+    <!--   c. 如果屬性值包含空白，
+        記得將屬性值前後加上雙引號或者單引號 -->
+
+    <!-- Bulbasaur  => 妙蛙種子 -->
+    <!-- Charmander => 小火龍 -->
+    <!-- Squirtle   => 傑尼龜 -->
+    <!-- Pikachu    => 皮卡丘 -->
+
+    <link rel="stylesheet" href="pokemon.css">
+
+</head>
+
+<body>
+
+    <!-- Simple Selectors  -->
+    <h3><a href="https://www.w3schools.com/css/css_selectors.asp">Simple Selectors - 網頁底下表格 All CSS Simple Selectors</a>
+    </h3>
+    <h3>各種選擇器與效果：<a href="https://www.w3schools.com/cssref/trysel.asp">https://www.w3schools.com/cssref/trysel.asp</a>
+    </h3>
+
+    <!-- 1. 使用 <div> 打包 <h3> 以及 <img> tag-->
+    <!-- 2. 屬於 神奇寶貝 的 <div> 賦予 class="pokemon"，id="對應的神奇寶貝名稱" -->
+    <!-- 3. 多的貓科，請自由命名 -->
+    <!-- 4. 回到 <head> 裡面的 <style> 區塊，開始進行css樣式的編輯 -->
+    <!-- 5. 最後，將CSS獨立為一個檔案，使用 link 元素連結至HTML檔案 -->
+
+
+    <!-- Bulbasaur  => 妙蛙種子 -->
+    <!-- Charmander => 小火龍 -->
+    <!-- Squirtle   => 傑尼龜 -->
+    <!-- Pikachu    => 皮卡丘 -->
+
+    <div class="pokemon" id="Bulbasaur">
+        <h3>妙蛙種子</h3>
+        <img src="image/Pokemon/001.png" alt="">
+    </div>
+
+    <div class="pokemon" id="Charmander">
+        <h3>小火龍</h3>
+        <img src="image/Pokemon/004.png" alt="">
+    </div>
+
+    <div class="pokemon" id="Squirtle">
+        <h3>傑尼龜</h3>
+        <img src="image/Pokemon/007.png" alt="">
+    </div>
+
+    <div class="pokemon" id="Pikachu">
+        <h3>皮卡丘</h3>
+        <img src="image/Pokemon/025.png" alt="">
+    </div>
+
+    <div class="lanlan" id="cat">
+        <h3>爛爛</h3>
+        <img src="image/LanLanCat/cat.jpg" alt="">
+    </div>
+
+
+</body>
+
+</html>

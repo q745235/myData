@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><button onclick="showNum(this)">.</button></td>
+        </tr>
+
+        <tr>
+            <td><button id="btn7" onclick="showNum(this)">7</button></td>
+            <td><button id="btn8" onclick="showNum(this)">8</button></td>
+            <td><button id="btn9" onclick="showNum(this)">9</button></td>
+            <td><button onclick="btnChar('+')">＋</button></td>
+        </tr>
+        <tr>
+            <td><button id="btn4" onclick="showNum(this)">4</button></td>
+            <td><button id="btn5" onclick="showNum(this)">5</button></td>
+            <td><button id="btn6" onclick="showNum(this)">6</button></td>
+            <td><button onclick="btnChar('-')">－</button></td>
+        </tr>
+        <tr>
+            <td><button id="btn1" onclick="showNum(this)">1</button></td>
+            <td><button id="btn2" onclick="showNum(this)">2</button></td>
+            <td><button id="btn3" onclick="showNum(this)">3</button></td>
+            <td><button onclick="btnChar('*')">＊</button></td>
+        </tr>
+        <tr>
+            <td><button id="btn0" onclick="showNum(this)">0</button></td>
+            <td><button onclick="btnChar('CE')">CE</button></td>
+            <td><button onclick="btnResult()">＝</button></td>
+            <td><button onclick="btnChar('/')">／</button></td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" colspan="4">
+                <h1 id="demo"></h1>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+
+    <script src="styleJs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>滑鼠移過，會有文字顯示的效果</title>
+    <style>
+        #content1 {
+            width: 477px;
+            /*4. 這裡要先變成?底下的元素才能依附上來*/
+        }
+
+        img {
+            width: 100%;
+        }
+
+        /*換成#img:hover + .desc是不是一樣的效果?*/
+        #content1:hover>.desc {
+            /*3. 試試看用display或者用visibility*/
+            visibility: visible;
+        }
+
+        .desc {
+            background-color: white;
+            opacity: 0.4;
+
+            /*2. 試試看用display或者用visibility*/
+            visibility: hidden;
+
+            /*1. 要怎麼樣跳脫現有的元素流找到定位?*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="content1" style="margin:100px;">
+        <img src="img/sunny.JPG">
+        <p class="desc">千陽號海上行</p>
+    </div>
+
+</body>
+
+</html>

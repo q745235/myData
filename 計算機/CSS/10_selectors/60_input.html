@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 10. 改變滑鼠經過 radio 的樣式
+               cursor: pointer */
+        input[type="radio"]:hover {
+            cursor: pointer;
+        }
+
+        /* 20. 調整 checkbox 的縮放比例
+                zoom: 3  */
+        input[type="checkbox"] {
+            zoom: 3;
+        }
+
+
+        /* 30. :valid 驗證通過時的樣式設定 */
+        input:valid {
+            background-color: lightgreen;
+        }
+
+        /* 40. :invalid 驗證不通過時的樣式設定 */
+        input:invalid {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>查詢 css 是否適用於某個瀏覽器：<a href="https://caniuse.com/">https://caniuse.com/</a></h3>
+
+    <input type="checkbox" name="" id="">
+
+    <hr>
+
+    <input type="radio" name="" id="">
+
+    <hr>
+    <!-- 30 & 40 對照 :valid & :invalid 測試 -->
+
+    <!-- 限制需要符合email格式 -->
+    <input type="email" value="123" /> (X)
+    <input type="email" value="test@gmail.com" /> (O)
+
+    <hr>
+    <!-- 限制需要全部大寫英文輸入 -->
+    <input type="text" pattern="[A-Z]{0,}">
+
+</body>
