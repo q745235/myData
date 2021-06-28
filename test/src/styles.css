@@ -1,0 +1,177 @@
+.d1 {
+  position:relative;
+  float:left;
+  display:inline;
+  width:19vw;
+}
+h5{
+  padding-left:50px;
+  padding-top:30px;
+}
+
+.circle {
+  display:inline;
+  float:right;
+  clear:both;
+  position:relative;
+  top:-3vh;
+  left:4vw;
+  width:50px;height:50px;
+  border-style:solid;
+  border-width:5px;
+  border-radius:999em;
+
+}
+.table{
+  margin-top: 10vh;
+  margin-left:-2vw;
+}
+li{
+  margin-top: 10px;
+}
+li:hover{
+  color:Maroon;
+  text-decoration :underline;
+}
+
+.d2{
+  float:right;
+  display:inline;
+  width:79vw;
+}
+
+#img1 {
+  width:79vw;
+  height: 66vh;
+}
+
+.tests {
+  background-color: rgb(202, 184, 171);
+  width:79vw;
+  height: 33vh;
+}
+.test1,.test2 {
+  position: relative;
+  display:inline;
+  float:left;
+  top:5vh;
+}
+.test3{
+  position: relative;
+  display:inline;
+  top:5vh;
+}
+#t1,#t2{
+  display:inline;
+  float:left;
+  font-weight:bold;
+  writing-mode: vertical-lr;
+}
+#t3{
+  display:inline;
+  float:left;
+  font-weight:bold;
+  writing-mode: vertical-lr;
+}
+.circle2 {
+  display:inline;
+  float:right;
+  clear:both;
+  position:relative;
+  top:-0.2em;
+  left:0.8em;
+  width:15px;height:15px;
+  border-style:solid;
+  border-width:4px;
+  border-radius:999em;
+  color: rgb(165, 106, 106);
+  opacity:0.7;
+
+}
+
+.testd {
+  display:inline;
+  float:left;
+  width: 19vw;
+}
+
+#box1,#box2,#burger{
+  display: none;
+  float:left;
+}
+#fa{
+  display: none;
+  position: relative;
+  top:2em;
+  left: 3em;
+  border-style:solid;
+  border-width:1px;
+  width:15px;height:15px;
+  border-radius:999em;
+}
+#fa>div{
+  position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 480px){
+  #box1,#box2{
+    display:block;
+    position: absolute;
+    top:2vh;
+    left:3vw;
+    font-size: 30px;
+    font-weight:bold;
+  }
+  #box2 {
+    display: none;
+  }
+  #fa{
+    display: block;
+  }
+  .d1,.d2,.tests,#img1{
+    width: 100vw;
+    float:none;
+  }
+  .test1,.test2{
+    float: none; 
+  }
+  #t1,#t2,#t3{
+    position: relative;
+    top:5%;
+  }
+  .testd{
+    float: none; 
+    display:grid;
+    width: 70vw;
+    padding-top: 5%;
+  }
+  .tests{
+    height: 80vh;
+  }
+  h5{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+  }
+  .circle{
+    left:-5vw;
+  }
+  ul{
+    display: none;
+    position: relative;
+    top:-20px;
+    left:20px;
+  }
+}
+
+@media(min-width: 1400px) { 
+  #box1,#box2{
+    display: none;
+  }
+  ul{
+    display: block;
+  }
+ }
