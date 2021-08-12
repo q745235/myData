@@ -4,7 +4,7 @@ import requests
 import mysql.connector
 
 def nearby_search(pos, radius='1500', type='doctor'):
-    url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
+    url = 'x'
     payloads = {
         'location': pos,
         'radius': radius,
@@ -18,7 +18,7 @@ def nearby_search(pos, radius='1500', type='doctor'):
     return [i['place_id'] for i in res.json().get('results')]
 
 def place_detal(place_id):
-    place_url = 'https://maps.googleapis.com/maps/api/place/details/json'
+    place_url = 'x'
     place_payloads = {
         'place_id': place_id,
         'language': 'zh-TW',
@@ -65,7 +65,7 @@ def place_detal(place_id):
 
 if __name__ == '__main__':
 
-    key = 'AIzaSyC4CLjCqzMwkD9Guyr4d6-plU9H1yLjo1k'
+    key = 'x'
     near_result = nearby_search(
         pos='24.150840, 120.651124',
         radius='4500'
