@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000">
       <div class="carousel-inner">
         <div class="carousel-item  active carousel-1 bg-cover">
         </div>
@@ -21,6 +21,8 @@ export default {
     Head,
   },
 }
+
+
 </script>
 
 <style lang="scss" scoped>

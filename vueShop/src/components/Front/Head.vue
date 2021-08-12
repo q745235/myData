@@ -8,7 +8,7 @@
       <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="navbar-nav nav-pills">
           <li class="nav-item"><a href="#/home/customer_products/全部" class="nav-link text-white">首頁</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">簡介</a></li>
+          <li class="nav-item"><a href="#/home/fall" class="nav-link text-white">AI專題影片</a></li>
           <li class="nav-item">
             <div>
               <a class="nav-link text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品</a>

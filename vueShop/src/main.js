@@ -16,6 +16,10 @@ import './bus';
 import currencyFilter from './filters/currency';
 import dateFilter from './filters/date';
 
+// 載入影片
+import Video from 'video.js'
+import 'video.js/dist/video-js.css'
+
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios);
 
@@ -25,6 +29,9 @@ Validator.localize('zh-TW', TW)
 Vue.component('Loading', Loading);
 Vue.filter('currency', currencyFilter);
 Vue.filter('date', dateFilter);
+
+// 影片
+Vue.prototype.$video = Video
 
 axios.defaults.withCredentials = true;
 

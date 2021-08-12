@@ -1,7 +1,7 @@
 <template>
   <div>
     <form class="form-signin" @submit.prevent="signin">
-      <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <img class="mb-4" src="../../../icon.png" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" v-model="user.username"  required autofocus>
@@ -12,8 +12,9 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
+      <div id="err" class="warnning"></div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2019-2021</p>
     </form>
   </div>
 </template>
@@ -37,6 +38,8 @@ export default {
         console.log(response.data);
         if (response.data.success) {
           vm.$router.push('/admin/products');
+        }else{
+
         }
       });
     },

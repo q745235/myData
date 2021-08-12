@@ -16,6 +16,7 @@ import CustomerProducts from '@/components/Front/pages/CustomerProducts'
 import UserOrder from '@/components/Front/pages/UserOrder'
 import UserCheckout from '@/components/Front/pages/UserCheckout'
 import UserPay from '@/components/Front/pages/UserPay'
+import Fall from '@/components/Front/pages/Fall'
 
 Vue.use(Router)
 
@@ -65,9 +66,17 @@ export default new Router({
           name: 'UserCheckout',
           component: UserCheckout,
         },
+
+
+        {
+          path: 'fall',
+          name: 'Fall',
+          component: Fall,
+
+        },
       ],
     },
-    
+
     // {
     //   path: '/',
     //   name: 'HelloWorld',
@@ -80,7 +89,7 @@ export default new Router({
       name: 'Login',
       component: Login,
     },
-    
+
     {
       path: '/admin',
       name: 'Dashboard',
@@ -108,7 +117,7 @@ export default new Router({
     },
 
     {
-      path: '/',
+      path: '/sim',
       name: 'Dashboard',
       component: Dashboard,
       children: [
@@ -124,5 +133,6 @@ export default new Router({
         },
       ],
     },
+
   ],
 });
