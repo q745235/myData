@@ -1,0 +1,17 @@
+name,english name,id,symptom,urgency
+異位性皮膚炎,atopic dermatitis,2,癢、皮膚過敏，急性期患者常搔抓而破皮，甚至導致細菌感染,低
+足癬,tinea pedis,14,屬皮膚癬菌感染一種，常見症狀有脫皮、腳趾間發紅、發癢等,低
+蜂窩性組織炎,cellulitis,4,屬皮膚傷口細菌感染，細菌經由傷口侵入真皮和皮下組織釋放毒素，初期症狀包括紅、腫、熱、痛等,高
+牛皮癬,psoriasis,10,經常反覆發作的皮膚炎症，常因復發太多次或不當搔癢導致越加肥厚、暗紅，患部呈現皮革狀,低
+病毒疣,Warts,16,人類乳突病毒感染造成的皮膚疣狀突起,高
+汗疹,miliaria,7,皮膚表面產生紅疹、發癢,低
+光化性角化病,actinic keratosis,1,因長期日曬皮膚出現帶有粗糙鱗屑不規則的斑塊或丘疹，呈現紅色或灰色病灶,中
+基底細胞癌,basal cell carcinoma,3,形狀對稱、邊緣規則顏色均勻、生長緩慢的黑色突起物,中
+皮膚纖維瘤,dermatofibroma,5,真皮纖維組織增生的良性腫瘤，約0.5到1公分大小的棕色硬塊,中
+惡性黑色素瘤,melanoma,6,扁平表淺的黑色斑塊、也可以是突起的結節腫瘤,極高
+痣,nevus,8,皮膚或黏膜上慢性的斑塊，一般外形會是深色的圓形,極低
+老人斑,pigmented benign keratosis,9,一種脂褐質色素斑塊,低
+脂漏性角化症,seborrheic keratosis,11,一種脂褐質色素斑塊,低
+曬斑,solar lentigo,12,一塊棕色斑點，表面平坦，斑點周圍界線分明,低
+鱗狀細胞癌,squamous cell carcinoma,13,未知,高
+未知,unknown,15,未知,無

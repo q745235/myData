@@ -1,0 +1,25 @@
+{
+  "name": "B",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "debug": "node --inspect index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "mysql": "^2.18.1",
+    "python-shell": "^2.0.2",
+    "request": "^2.88.2"
+  },
+  "description": ""
+}
